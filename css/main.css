@@ -45,6 +45,63 @@ body {
   width: 100%;
   clear: both;
 }
+/* 안내창 */
+.modal-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.modal-main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+line-height: 50px;
+background-color: #fff;
+width: 600px;
+height: 500px;
+border-radius: 50px;
+position: relative;
+}
+.modal-main .modal-logo{
+  position: absolute;
+  top:-50px;
+  left: 50%;
+transform: translateX(-50%);
+ border-radius: 50%;
+ border: 6px solid #fff;
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: url("../images/chat-btn.png") no-repeat center #dbf4c7;
+}
+.modal-nonotic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal-nonotic strong{
+  color: red;
+  background: linear-gradient(to top , yellow 50% , transparent 50%);
+}
+.modal-nonotic span{
+  font-size: 16px;
+  font-weight: 300;
+}
+.modal-close{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d8d8d8;
+border-radius: 0 0 50px 50px;
+}
 /* 레이아웃 */
 .wrap {
   display: block;
